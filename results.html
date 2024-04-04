@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Results</title>
+</head>
+<body>
+    <h1>Prediction Results</h1>
+    <table>
+        <tr>
+            <th>Image</th>
+            <th>Prediction Probability</th>
+        </tr>
+        {% for filename, result in results %}
+        <tr>
+            <td>{{ filename }}</td>
+            <td>{{ result }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
